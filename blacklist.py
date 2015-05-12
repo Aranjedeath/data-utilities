@@ -33,7 +33,7 @@ bad_words_raw = ['2g1c', '2 girls 1 cup', 'acrotomophilia', 'anal', 'anilingus',
                    'James Eagan Holmes', 'JamesEganHolmes', 'Adam Lanza', 'AdamLanza', 'Dzhokar Tsarnaev', 'DzhokarTsarnaev', 'Tamerlan Tsarnaev', 'TamerlanTsarnaev', 'Tsarnaev', \
                    'Bin laden', 'Osama', 'Osama Bin Laden', 'Zawahiri', 'George Zimmerman', 'T.J. Lane', 'TJLane', 'TJ Lane', 'Anwar al-Awlaki', 'al-Awlaki', 'Awlaki', 'crooked', \
                    'national rifle association', 'ill-informed', 'Mayors Against All Gun', 'dictator', 'Obama', 'Barack', 'Bloomberg', 'Hillary Clinton', 'Wayne Lapierre', 'Joe Biden', \
-                   'Blumburg', 'Bloomberg', 'Bloom', 'Nanny Bloomberg', 'Nanny', 'Nannystate', 'Gunsdontkill', 'Peopledo', 'Guns', 'Gunsforall', 'Guns4all', 'Stalin', 'Mao', 'Lenin', \
+                   'Blumburg', 'Bloomberg', 'Nanny Bloomberg', 'Nanny', 'Nannystate', 'Gunsdontkill', 'Peopledo', 'Guns', 'Gunsforall', 'Guns4all', 'Stalin', 'Mao', 'Lenin', \
                    'Hitler', 'Mussolini', 'Mugabe', 'Vlad', 'Kim Jong-Il', 'Jong-Il', 'Hirohito', 'Hirota', 'Brezhnev', 'Kai-shek', 'Wilhelm', 'Minh', 'Yakubu', 'Gowon', 'Saddam', \
                    'Charles Manson', 'Hussein', 'Nazi', 'elliot rodger', 'elliott rodger', 'isis']
 
@@ -61,6 +61,19 @@ def blacklist(word, word_length=30):
             result = True
     return result
 
+def titlecase(row, first_name=0, last_name=1, address=2, city=3, state=4, zip=5):
 
-# print blacklist('hello')
-# print blacklist('bloomberg')
+    def zip_fill(zip):
+        if zip == '':
+            return ''
+        elif len(zip) == 4:
+            return zip.zfill(5)
+        else:
+            return zip
+
+    new_row = [
+        row[first_name].title(), row[last_name].title(), row[address].upper(), row[city].title(), row[state].upper(), zip_fill(row[zip])
+    ] + row[zip+1:]
+
+    return new_row
+
