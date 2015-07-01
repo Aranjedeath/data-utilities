@@ -35,7 +35,7 @@ bad_words_raw = ['2g1c', '2 girls 1 cup', 'acrotomophilia', 'anal', 'anilingus',
                    'national rifle association', 'ill-informed', 'Mayors Against All Gun', 'dictator', 'Obama', 'Barack', 'Bloomberg', 'Hillary Clinton', 'Wayne Lapierre', 'Joe Biden', \
                    'Blumburg', 'Bloomberg', 'Nanny Bloomberg', 'Nanny', 'Nannystate', 'Gunsdontkill', 'Peopledo', 'Guns', 'Gunsforall', 'Guns4all', 'Stalin', 'Mao', 'Lenin', \
                    'Hitler', 'Mussolini', 'Mugabe', 'Vlad', 'Kim Jong-Il', 'Jong-Il', 'Hirohito', 'Hirota', 'Brezhnev', 'Kai-shek', 'Wilhelm', 'Minh', 'Yakubu', 'Gowon', 'Saddam', \
-                   'Charles Manson', 'Hussein', 'Nazi', 'elliot rodger', 'elliott rodger', 'isis']
+                   'Charles Manson', 'Hussein', 'Nazi', 'elliot rodger', 'elliott rodger', 'isis', 'dylann', 'dylan roof', 'dylan roofe', 'dylann roof', 'dylan roofe']
 
 super_bad_words = ['fuck', 'asshole', 'guns', 'amendment', 'pussy', 'grabbing', 'grabber', 'bloomberg', \
         'cunt', 'gangbanger', 'slut', 'kike', 'nigger', 'nigga', 'cocksucker', 'wingnut', 'dingleberry', 'ballsack', 'idiot', 'scumbag', 'death', 'knife', 'benghazi']
