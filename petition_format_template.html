@@ -1,0 +1,36 @@
+<!doctype html>
+<head>
+	<style>
+		body {
+		font-family: "Helvetica";
+		font-size: 10pts;
+		margin: 1in 1in;
+		}
+		
+		.personName {
+		font-weight: bold;
+		}
+
+	</style>
+</head>
+
+<body>
+	<table>
+	{% for row, person in data.items() %}
+		{% if row is divisibleby(3) %}
+		<tr>
+			<td>
+				<div class="personName"> {{ person.first_name }} {{ person.last_name }} <br> </div>
+				{% if person.address1 %} {{ person.address1}} <br> {% endif %}
+				{{ person.city }} {% if person.state %}, {{ person.state }} {% endif %} {{ person.zipcode }} <br><br><br>
+			</td>
+		{% else %}
+			<td>
+				<div class="personName"> {{ person.first_name }} {{ person.last_name }} <br> </div>
+				{% if person.address1 %} {{ person.address1}} <br> {% endif %}
+				{{ person.city }} {% if person.state %}, {{ person.state }} {% endif %} {{ person.zipcode }} <br><br><br>
+			</td>
+		{% endif %}
+	{% endfor %}
+
+</body>
