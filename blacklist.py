@@ -26,7 +26,7 @@ bad_words_raw = ['2g1c', '2 girls 1 cup', 'acrotomophilia', 'anal', 'anilingus',
                    'snowballing', 'sodomize', 'sodomy', 'spic', 'spooge', 'spread legs', 'strap on', 'strapon', 'strappado', 'strip club', 'style doggy', 'suck', 'sucks', \
                    'suicide girls', 'sultry women', 'swastika', 'swinger', 'tainted love', 'taste my', 'tea bagging', 'threesome', 'throating', 'tied up', 'tight white', \
                    'tit', 'tits', 'titties', 'titty', 'tongue in a', 'topless', 'tosser', 'towelhead', 'tranny', 'tribadism', 'tub girl', 'tubgirl', 'tushy', 'twat', 'twink', \
-                   'twinkie', 'two girls one cup', 'undressing', 'upskirt', 'urethra play', 'urophilia', 'vagina', 'venus mound', 'vibrator', 'violet blue', 'violet wand', \
+                   'twinkie', 'two girls one cup', 'undressing', 'upskirt', 'urethra play', 'urophilia', 'vagina', 'venus mound', 'vibrator', 'violet wand', \
                    'vorarephilia', 'voyeur', 'vulva', 'wank', 'wet dream', 'wetback', 'white power', 'women rapping', 'wrapping men', 'wrinkled starfish', 'xx', 'xxx', 'yaoi', \
                    'yellow showers', 'yiffy', 'zoophilia', 'Lanza', 'Eric Harris', 'EricHarris', 'Dylan Klebold', 'DylanKlebold', 'Seung-Hui Cho', 'Seung-Hui-Cho', 'Seung Hui Cho', \
                    'SeungHuiCho', 'Nidal Malik Hasan', 'NidalMalik Hasan', 'Nidal MalikHasan', 'NidalMalikHasan', 'Jared Loughner', 'JaredLoughner', 'James Holmes', 'JamesHolmes', \
